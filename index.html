@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3 Days Energy Reset Experience</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="config.js"></script>
+
+<style>
+body{
+font-family:'Poppins',sans-serif;
+background:#f8faf7;
+}
+.gradient-bg{
+background:linear-gradient(135deg,#f3fff1 0%,#ffffff 50%,#effceb 100%);
+}
+.whatsapp-btn{
+background:linear-gradient(135deg,#25D366,#1ebe57);
+}
+</style>
+</head>
+
+<body>
+
+<section class="gradient-bg py-16 px-6 min-h-screen flex items-center">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+
+<div>
+
+<div class="inline-block bg-green-100 text-green-700 px-5 py-2 rounded-full font-bold text-sm">
+FREE ENTRY
+</div>
+
+<h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight mt-6">
+Join the <span class="text-green-600">3 Days Energy Reset</span> Experience
+</h1>
+
+<p class="text-xl text-gray-600 mt-6 leading-relaxed">
+Kickstart your health journey and work on improving energy levels & reduce fatigue.
+</p>
+
+<div id="challengeStartDate"
+class="mt-5 inline-flex items-center bg-green-50 text-green-700 px-5 py-3 rounded-2xl font-semibold text-lg shadow-sm">
+Starting: 18th May 2026
+</div>
+
+<div class="mt-6 bg-white p-6 rounded-3xl shadow-xl max-w-md">
+
+<h3 class="font-bold text-xl mb-5 text-gray-800">
+Challenge Starts In
+</h3>
+
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+
+<div class="bg-gray-50 p-4 rounded-2xl shadow-sm">
+<div id="days" class="text-3xl font-bold text-green-700">00</div>
+<div class="text-sm text-gray-500 mt-1">Days</div>
+</div>
+
+<div class="bg-gray-50 p-4 rounded-2xl shadow-sm">
+<div id="hours" class="text-3xl font-bold text-green-700">00</div>
+<div class="text-sm text-gray-500 mt-1">Hours</div>
+</div>
+
+<div class="bg-gray-50 p-4 rounded-2xl shadow-sm">
+<div id="minutes" class="text-3xl font-bold text-green-700">00</div>
+<div class="text-sm text-gray-500 mt-1">Mins</div>
+</div>
+
+<div class="bg-gray-50 p-4 rounded-2xl shadow-sm">
+<div id="seconds" class="text-3xl font-bold text-green-700">00</div>
+<div class="text-sm text-gray-500 mt-1">Secs</div>
+</div>
+
+</div>
+</div>
+
+<div class="flex flex-wrap gap-4 mt-8">
+<div class="bg-white shadow rounded-2xl px-4 py-3">✔ FREE ENTRY</div>
+<div class="bg-white shadow rounded-2xl px-4 py-3">✔ WhatsApp Support</div>
+<div class="bg-white shadow rounded-2xl px-4 py-3">✔ Guided by Coach</div>
+</div>
+
+<a id="heroWhatsappBtn"
+href="#"
+target="_blank"
+class="inline-block mt-10 whatsapp-btn text-white px-6 sm:px-10 py-4 sm:py-5 rounded-2xl text-lg sm:text-xl font-bold shadow-xl w-full sm:w-auto text-center">
+JOIN FREE ON WHATSAPP
+</a>
+
+</div>
+
+<div>
+<img src="assets/images/hero.png" class="rounded-[30px] shadow-2xl object-cover w-full">
+</div>
+
+</div>
+</section>
+
+<section class="py-20 bg-white px-6">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+<img src="assets/coach/coach.jpg" class="rounded-[30px] shadow-2xl object-cover w-full">
+
+<div>
+
+<div class="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full font-bold text-sm">
+MEET YOUR COACH
+</div>
+
+<h2 class="text-4xl sm:text-5xl font-extrabold mt-6">
+Biswajit & Anisha
+</h2>
+
+<p class="text-xl text-green-600 font-semibold mt-4">
+Certified Functional Health Coach
+</p>
+
+<p class="text-gray-600 leading-relaxed mt-6 text-lg">
+Helping thousands of people to improve energy, reduce fatigue, improve gut health and transform their health naturally through simple nutrition and lifestyle changes using a holistic approach.
+</p>
+
+</div>
+</div>
+</section>
+
+<section class="py-20 px-6">
+<div class="max-w-7xl mx-auto">
+
+<h2 class="text-3xl sm:text-5xl font-bold text-center mb-12">
+Feedback Of Our Previous Challenge Participants
+</h2>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<img src="assets/testimonials/testimonial1.jpg" class="rounded-3xl shadow-xl w-full">
+<img src="assets/testimonials/testimonial2.jpg" class="rounded-3xl shadow-xl w-full">
+<img src="assets/testimonials/testimonial3.jpg" class="rounded-3xl shadow-xl w-full">
+<img src="assets/testimonials/testimonial4.jpg" class="rounded-3xl shadow-xl w-full">
+</div>
+
+</div>
+</section>
+
+<script>
+
+window.CONFIG = {
+whatsappUrl: "https://chat.whatsapp.com/DEUmUHv9tgC6PSBoP1ypmI",
+challengeDate: "2026-05-18T09:00:00"
+};
+
+function updateCountdown() {
+
+const challengeDate = new Date(window.CONFIG.challengeDate).getTime();
+const now = new Date().getTime();
+
+const distance = challengeDate - now;
+
+if(distance <= 0){
+return;
+}
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+const hours = Math.floor(
+(distance % (1000 * 60 * 60 * 24)) /
+(1000 * 60 * 60)
+);
+
+const minutes = Math.floor(
+(distance % (1000 * 60 * 60)) /
+(1000 * 60)
+);
+
+const seconds = Math.floor(
+(distance % (1000 * 60)) / 1000
+);
+
+document.getElementById("days").innerHTML =
+String(days).padStart(2,"0");
+
+document.getElementById("hours").innerHTML =
+String(hours).padStart(2,"0");
+
+document.getElementById("minutes").innerHTML =
+String(minutes).padStart(2,"0");
+
+document.getElementById("seconds").innerHTML =
+String(seconds).padStart(2,"0");
+}
+
+
+document.getElementById('heroWhatsappBtn').href = window.CONFIG.whatsappUrl;
+
+const finalBtn = document.getElementById('finalWhatsappBtn');
+if(finalBtn){
+  finalBtn.href = window.CONFIG.whatsappUrl;
+}
+
+
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+</script>
+
+
+<section class="py-20 px-6 bg-white">
+<div class="max-w-5xl mx-auto">
+
+<h2 class="text-3xl sm:text-5xl font-bold text-center mb-14">
+Frequently Asked Questions
+</h2>
+
+<div class="space-y-6">
+
+<div class="bg-[#f8faf7] rounded-3xl p-8 shadow-sm">
+<h3 class="text-2xl font-bold">
+What is the 3 Days Energy Reset Experience?
+</h3>
+<p class="text-gray-600 mt-4 leading-relaxed text-lg">
+The 3 Days Energy Reset Experience is a habit building practical workshop designed to help improve energy levels, digestion, metabolism, and overall health naturally through simple daily practices.
+</p>
+</div>
+
+<div class="bg-[#f8faf7] rounded-3xl p-8 shadow-sm">
+<h3 class="text-2xl font-bold">
+Who can join this program?
+</h3>
+<p class="text-gray-600 mt-4 leading-relaxed text-lg">
+Anyone looking to improve energy levels, reduce fatigue, improve digestion, develop healthier habits, and experience better overall wellness can join this program.
+</p>
+</div>
+
+<div class="bg-[#f8faf7] rounded-3xl p-8 shadow-sm">
+<h3 class="text-2xl font-bold">
+Will there be any specific timing for the program?
+</h3>
+<p class="text-gray-600 mt-4 leading-relaxed text-lg">
+It is a habit building challenge, and we will be providing all the details inside the WhatsApp group and personal message. You can plan and follow it as per your schedule.
+</p>
+</div>
+
+<div class="bg-[#f8faf7] rounded-3xl p-8 shadow-sm">
+<h3 class="text-2xl font-bold">
+Can I join if I have a busy schedule?
+</h3>
+<p class="text-gray-600 mt-4 leading-relaxed text-lg">
+Yes. The daily tasks and guidance are simple, practical, and easy to follow even with a busy lifestyle.
+</p>
+</div>
+
+<div class="bg-[#f8faf7] rounded-3xl p-8 shadow-sm">
+<h3 class="text-2xl font-bold">
+Will I receive support during the challenge?
+</h3>
+<p class="text-gray-600 mt-4 leading-relaxed text-lg">
+Yes. You will receive guidance from coach, motivation, and support inside the WhatsApp group throughout the challenge.
+</p>
+</div>
+
+<div class="bg-[#f8faf7] rounded-3xl p-8 shadow-sm">
+<h3 class="text-2xl font-bold">
+What benefits can I expect from this experience?
+</h3>
+<p class="text-gray-600 mt-4 leading-relaxed text-lg">
+You will get practical ideas and also implement for 3 days. Obviously 3 days you can't expect huge results, but you will start noticing some changes on your energy levels.
+</p>
+</div>
+
+<div class="bg-[#f8faf7] rounded-3xl p-8 shadow-sm">
+<h3 class="text-2xl font-bold">
+How do I know if my body needs an energy reset?
+</h3>
+<p class="text-gray-600 mt-4 leading-relaxed text-lg">
+Common signs may include:
+<br><br>
+• Constant fatigue<br>
+• Low energy<br>
+• Poor digestion<br>
+• Bloating<br>
+• Lack of focus<br>
+• Poor sleep<br>
+• Feeling mentally or physically exhausted frequently
+</p>
+</div>
+
+<div class="bg-green-50 rounded-3xl p-8 shadow-sm border border-green-100">
+<h3 class="text-2xl font-bold text-green-800">
+Why is this program FREE?
+</h3>
+
+<p class="text-gray-700 mt-4 leading-relaxed text-lg">
+Today, many people are struggling to improve their health by following random advice from YouTube, Google, and social media, which often leads to confusion and inconsistency. Our goal is to create awareness about holistic health and help people understand the importance of caring for their body naturally and sustainably.
+</p>
+
+<p class="text-gray-700 mt-5 leading-relaxed text-lg">
+This free program is our initiative to guide and support individuals with the right knowledge, simple practices, and a structured approach toward better health and well-being. We believe that basic health awareness and wellness education should be accessible to everyone.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<footer class="bg-[#0f172a] text-white py-8 px-6">
+  <div class="max-w-7xl mx-auto text-center">
+
+    <p class="text-sm text-gray-300">
+      © 2026 3 Day Energy Reset Challenge. All Rights Reserved.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
